@@ -1,0 +1,69 @@
+{
+  "intents": [
+    {
+      "tag": "python",
+      "patterns": [
+        "What is Python?",
+        "Tell me about Python",
+        "Why should I learn Python?",
+        "Explain Python programming",
+        "What can Python be used for?"
+      ],
+      "responses": [
+        "Python is a popular programming language used in AI, machine learning, web development and data science."
+      ]
+    },
+    {
+      "tag": "machine_learning",
+      "patterns": [
+        "What is machine learning?",
+        "Explain machine learning",
+        "Tell me about machine learning",
+        "How does machine learning work?",
+        "What are machine learning models?"
+      ],
+      "responses": [
+        "Machine learning is a branch of AI that enables systems to learn patterns from data."
+      ]
+    },
+    {
+      "tag": "ai_engineering",
+      "patterns": [
+        "What is AI engineering?",
+        "Explain AI engineering",
+        "What does an AI engineer do?",
+        "Tell me about AI engineering",
+        "AI engineer career"
+      ],
+      "responses": [
+        "AI engineers build, deploy and maintain artificial intelligence systems and machine learning models."
+      ]
+    },
+    {
+      "tag": "data_science",
+      "patterns": [
+        "What is data science?",
+        "Explain data science",
+        "Data science career",
+        "Tell me about data science",
+        "What does a data scientist do?"
+      ],
+      "responses": [
+        "Data science combines statistics, programming and domain knowledge to extract insights from data."
+      ]
+    },
+    {
+      "tag": "azure_ai900",
+      "patterns": [
+        "What is AI-900?",
+        "Tell me about Azure AI-900",
+        "Microsoft AI certification",
+        "Azure AI Fundamentals",
+        "Should I take AI-900?"
+      ],
+      "responses": [
+        "AI-900 is Microsoft's Azure AI Fundamentals certification for beginners learning AI concepts and Azure AI services."
+      ]
+    }
+  ]
+}
