@@ -50,6 +50,6 @@ def preprocess_text(text):
 
 if __name__ == "__main__":
 
-    sample_text = ("Machine Learning allows computers to learn from data.")
+    sample_text = "Machine Learning allows computers to learn from data."
 
     print(preprocess_text(sample_text))

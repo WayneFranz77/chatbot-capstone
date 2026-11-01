@@ -6,11 +6,7 @@ class ResponseSelector:
 
     def __init__(self, filepath):
 
-        with open(
-            filepath,
-            "r",
-            encoding="utf-8"
-        ) as file:
+        with open(filepath, "r", encoding="utf-8") as file:
 
             self.data = json.load(file)
 
@@ -20,23 +16,13 @@ class ResponseSelector:
 
             if intent["tag"] == tag:
 
-                return random.choice(
-                    intent["responses"]
-                )
+                return random.choice(intent["responses"])
 
-        return (
-            "I'm sorry, I don't understand."
-        )
+        return "I'm sorry, I don't understand."
 
 
 if __name__ == "__main__":
 
-    selector = ResponseSelector(
-        "data/intents.json"
-    )
+    selector = ResponseSelector("data/intents.json")
 
-    print(
-        selector.get_response(
-            "machine_learning"
-        )
-    )
+    print(selector.get_response("machine_learning"))

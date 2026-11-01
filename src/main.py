@@ -1,4 +1,4 @@
-from chatbot import ChatBot
+from src.chatbot import ChatBot
 
 
 def main():
@@ -18,21 +18,15 @@ def main():
             print("Goodbye!")
             break
 
-        result = chatbot.get_response(
-            user_input
-        )
+        result = chatbot.get_response(user_input)
 
-        print(
-            f"\nIntent: {result['intent']}"
-        )
+        print(f"\nIntent: {result['intent']}")
 
-        print(
-            f"Entities: {result['entities']}"
-        )
+        print(f"Confidence: " f"{result['confidence']:.2%}")
 
-        print(
-            f"Bot: {result['response']}"
-        )
+        print(f"Entities: {result['entities']}")
+
+        print(f"Bot: {result['response']}")
 
 
 if __name__ == "__main__":

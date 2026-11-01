@@ -13,4 +13,4 @@ WORD2VEC_WINDOW = 5
 WORD2VEC_MIN_COUNT = 1
 WORD2VEC_WORKERS = 4
 
-DEFAULT_RESPONSE = ("I'm sorry, I don't understand that question yet.")
+DEFAULT_RESPONSE = "I'm sorry, I don't understand that question yet."

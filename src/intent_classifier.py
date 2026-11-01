@@ -10,10 +10,7 @@ class IntentClassifier:
 
         self.vectorizer = TfidfVectorizer()
 
-        self.classifier = LogisticRegression(
-            max_iter=1000,
-            random_state=42
-        )
+        self.classifier = LogisticRegression(max_iter=1000, random_state=42)
 
         self.patterns = []
         self.labels = []
@@ -33,34 +30,43 @@ class IntentClassifier:
 
     def train(self):
 
-        X = self.vectorizer.fit_transform(
-            self.patterns
-        )
+        X = self.vectorizer.fit_transform(self.patterns)
 
-        self.classifier.fit(
-            X,
-            self.labels
-        )
+        self.classifier.fit(X, self.labels)
 
     def predict(self, text):
 
         X = self.vectorizer.transform([text])
 
-        return self.classifier.predict(X)[0]
+        prediction = self.classifier.predict(X)[0]
+
+        confidence = max(self.classifier.predict_proba(X)[0])
+
+        return prediction, confidence
 
 
 if __name__ == "__main__":
 
     classifier = IntentClassifier()
 
-    classifier.load_training_data(
-        "data/intents.json"
-    )
+    classifier.load_training_data("data/intents.json")
 
     classifier.train()
 
-    result = classifier.predict(
-        "Tell me about machine learning"
-    )
+    test_questions = [
+        "Tell me about TensorFlow",
+        "What is NumPy?",
+        "How do I become an AI engineer?",
+        "What is deep learning?",
+        "Tell me about pandas",
+    ]
 
-    print(result)
+    for question in test_questions:
+
+        intent, confidence = classifier.predict(question)
+
+        print(f"Question: {question}")
+
+        print(f"Intent: {intent}")
+
+        print(f"Confidence: {confidence:.2%}\n")

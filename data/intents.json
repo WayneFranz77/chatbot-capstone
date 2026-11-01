@@ -44,12 +44,12 @@
       "patterns": [
         "What is data science?",
         "Explain data science",
-        "Data science career",
         "Tell me about data science",
+        "Data scientist role",
         "What does a data scientist do?"
       ],
       "responses": [
-        "Data science combines statistics, programming and domain knowledge to extract insights from data."
+        "Data science combines programming, statistics and business knowledge to extract insights from data."
       ]
     },
     {
@@ -63,6 +63,128 @@
       ],
       "responses": [
         "AI-900 is Microsoft's Azure AI Fundamentals certification for beginners learning AI concepts and Azure AI services."
+      ]
+    },
+    {
+      "tag": "deep_learning",
+      "patterns": [
+        "What is deep learning?",
+        "Explain deep learning",
+        "Tell me about neural networks",
+        "How does deep learning work?",
+        "Deep learning applications"
+      ],
+      "responses": [
+        "Deep learning is a subset of machine learning that uses neural networks with multiple layers to learn complex patterns."
+      ]
+    },
+    {
+      "tag": "statistics",
+      "patterns": [
+        "Why is statistics important?",
+        "Tell me about statistics",
+        "Explain statistics",
+        "Statistics for machine learning",
+        "What is statistics?"
+      ],
+      "responses": [
+        "Statistics provides the mathematical foundation for data analysis, machine learning and decision-making."
+      ]
+    },
+    {
+      "tag": "tensorflow",
+      "patterns": [
+        "What is TensorFlow?",
+        "Tell me about TensorFlow",
+        "TensorFlow framework",
+        "Machine learning with TensorFlow",
+        "Explain TensorFlow"
+      ],
+      "responses": [
+        "TensorFlow is an open-source machine learning framework developed by Google for building and deploying AI models."
+      ]
+    },
+    {
+      "tag": "pytorch",
+      "patterns": [
+        "What is PyTorch?",
+        "Tell me about PyTorch",
+        "Explain PyTorch",
+        "PyTorch framework",
+        "Deep learning with PyTorch"
+      ],
+      "responses": [
+        "PyTorch is an open-source deep learning framework widely used for research, experimentation and production AI systems."
+      ]
+    },
+    {
+      "tag": "pandas",
+      "patterns": [
+        "What is pandas?",
+        "Tell me about pandas",
+        "Explain pandas library",
+        "Why use pandas?",
+        "Data analysis with pandas"
+      ],
+      "responses": [
+        "Pandas is a Python library used for data manipulation, cleaning, analysis and working with tabular datasets."
+      ]
+    },
+    {
+      "tag": "numpy",
+      "patterns": [
+        "What is NumPy?",
+        "Explain NumPy",
+        "Tell me about NumPy",
+        "Why use NumPy?",
+        "NumPy arrays"
+      ],
+      "responses": [
+        "NumPy is a Python library that provides fast numerical computations and powerful multidimensional arrays."
+      ]
+    },
+    {
+      "tag": "azure_ai_engineer",
+      "patterns": [
+        "What is Azure AI Engineer?",
+        "AI Engineer Associate",
+        "Azure AI Engineer certification",
+        "Microsoft AI Engineer",
+        "AI-102 certification"
+      ],
+      "responses": [
+        "The Azure AI Engineer Associate certification validates skills in building, managing and deploying AI solutions using Microsoft Azure."
+      ]
+    },
+    {
+      "tag": "career_advice",
+      "patterns": [
+        "How do I become an AI engineer?",
+        "AI career path",
+        "Machine learning career",
+        "Career advice",
+        "Start a career in AI",
+        "AI careers",
+        "Tell me about AI careers",
+        "Artificial intelligence careers",
+        "Jobs in AI",
+        "Working in machine learning"
+      ],
+      "responses": [
+        "To start a career in AI, learn Python, statistics, machine learning fundamentals, cloud technologies and build practical projects."
+      ]
+    },
+    {
+      "tag": "chatbot_development",
+      "patterns": [
+        "How do I build a chatbot?",
+        "Chatbot development",
+        "Tell me about chatbots",
+        "Create a chatbot",
+        "Chatbot architecture"
+      ],
+      "responses": [
+        "Chatbots are built using NLP techniques such as intent classification, entity recognition and response generation or retrieval."
       ]
     }
   ]

@@ -1,17 +1,20 @@
-import re
-
-
 TECH_ENTITIES = [
     "python",
     "machine learning",
-    "ai",
+    "deep learning",
     "artificial intelligence",
+    "ai",
     "data science",
+    "statistics",
     "azure",
     "ai-900",
+    "ai-102",
     "tensorflow",
     "pytorch",
-    "streamlit"
+    "numpy",
+    "pandas",
+    "neural networks",
+    "chatbot",
 ]
 
 
@@ -31,8 +34,6 @@ def extract_entities(text):
 
 if __name__ == "__main__":
 
-    sample = (
-        "Tell me about Python and AI-900 certification"
-    )
+    sample = "Tell me about TensorFlow, PyTorch and AI-102 certification"
 
     print(extract_entities(sample))

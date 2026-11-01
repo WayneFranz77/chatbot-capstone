@@ -1,0 +1,80 @@
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Compiled Extensions
+*.so
+*.pyd
+*.dll
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer Logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test / Coverage
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# VS Code
+.vscode/
+
+# OS Files
+Thumbs.db
+.DS_Store
+
+# Environment Variables
+.env
+
+# Logs
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Model Files (optional)
+# Uncomment if trained models become large
+# models/*.bin
+# models/*.model
+# models/*.kv
+
+# Generated Cache
+.cache/
+
+# Python Packaging
+*.egg
+
+# PyInstaller
+*.spec
+
+# Ruff / Black Cache
+.ruff_cache/
+.mypy_cache/
+
+# Local Streamlit State
+.streamlit/
+
+# Ignore PNG exports ONLY if generated automatically
+# screenshots/generated/
+
+# Keep screenshots for README
+!screenshots/*.png
